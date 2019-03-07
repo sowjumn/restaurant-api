@@ -1,3 +1,8 @@
+[metadata.heroku]
+  root-package = "github.com/sowjumn/restaurant-api"
+  go-version = "1.12"
+  install = [ "./..." ]
+
 # Gopkg.toml example
 #
 # Refer to https://golang.github.io/dep/docs/Gopkg.toml.html
