@@ -8,15 +8,15 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func homeController() {
+func homeController(w http.ResponseWriter, req *http.Request) {
 
 }
 
 func restaurantsController(w http.ResponseWriter, req *http.Request) {
-	fmt.Printf("Incoming %v request to Restaurants", r.Method)
+	fmt.Printf("Incoming %v request to Restaurants", req.Method)
 
-	params := mux.Vars(r)
-	fmt.Printf(params)
+	params := mux.Vars(req)
+	fmt.Printf("My params are %v", params)
 }
 
 func main() {
